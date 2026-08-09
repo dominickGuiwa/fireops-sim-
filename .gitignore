@@ -1,0 +1,45 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Node / Vite
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+.vite/
+
+# Training artifacts (root-level only; backend/app/models is source code)
+/models/
+/checkpoints/
+*.zip
+*.pt
+*.pth
+results/*.tmp
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local analysis artifacts
+graphify-out/
+*.log
+
+# Local assistant configuration
+.claude/
