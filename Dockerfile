@@ -45,7 +45,7 @@ COPY frontend ./
 RUN npm run build
 
 
-FROM nginxinc/nginx-unprivileged:1.30.2-alpine AS frontend
+FROM nginxinc/nginx-unprivileged:1.31.4-alpine AS frontend
 
 COPY --from=frontend-builder /app/frontend/dist /usr/share/nginx/html
 
